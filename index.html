@@ -5,26 +5,7 @@
     <h1>Hello World</h1>
     <p>I'm hosted with GitHub Pages.</p>
 </body>
-
+<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 </html>
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '3842617082444166',
-            autoLogAppEvents: true,
-            xfbml: true,
-            version: 'v9.0'
-        });
-        FB.login(function (response) {
-            if (response.authResponse) {
-                console.log('Welcome!  Fetching your information.... ');
-                FB.api('/me', function (response) {
-                    console.log('Good to see you, ' + response.name + '.');
-                });
-            } else {
-                console.log('User cancelled login or did not fully authorize.');
-            }
-        });
-    };
-</script>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=3842617082444166&autoLogAppEvents=1" nonce="zjjwXhw1"></script>
