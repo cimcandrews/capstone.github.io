@@ -17,7 +17,9 @@
       xfbml: true,
       version: 'v9.0'
     });
+  };
 
+  function printFeed() {
     FB.api(
       "/{page-id}/feed",
       function (response) {
@@ -26,7 +28,7 @@
         }
       }
     );
-  };
+  }
 </script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous"
@@ -35,4 +37,5 @@
 <body>
   <div class="fb-login-button" data-width="200" data-size="large" data-button-type="continue_with" data-layout="default"
     data-auto-logout-link="true" data-use-continue-as="true"></div>
+  <button onclick="printFeed()">Click me</button>
 </body>
