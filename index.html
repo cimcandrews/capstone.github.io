@@ -23,6 +23,7 @@
     FB.api(
       "/anchoragedailynews/feed",
       function (response) {
+        console.log("Made it here...");
         if (response && !response.error) {
           console.log(response["data"]);
         }
