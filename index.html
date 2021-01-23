@@ -21,13 +21,14 @@
 
   function printFeed() {
     FB.api(
-      "/{page-id}/feed",
+      "/anchoragedailynews/feed",
       function (response) {
         if (response && !response.error) {
           console.log(response);
         }
       }
     );
+    console.log("Hello there");
   }
 </script>
 <div id="fb-root"></div>
