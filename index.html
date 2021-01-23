@@ -25,6 +25,7 @@
       "/anchoragedailynews/feed",
       function (response) {
         console.log("Made it here...");
+        console.log(response);
         if (response && !response.error) {
           console.log(response["data"]);
         }
